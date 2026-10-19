@@ -1,0 +1,8 @@
+# Encapsulated private folder
+# ---------------------------------------------------------------
+# Everything in this folder stays on your machine and is never
+# committed or published (CV PDFs, drafts, notes, raw photos...).
+# Only this .gitignore file itself is tracked, so the folder exists
+# for anyone who clones the repo.
+*
+!.gitignore

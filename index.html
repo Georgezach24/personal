@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Georgios Zachos · Junior Software Engineer</title>
+  <meta name="description" content="Georgios Zachos: Junior Software Engineer at Cognity Consulting and Information & Communication Systems Engineering student at the University of the Aegean. C++, Python, Java, real-time graphics, NLP and distributed systems.">
+  <meta name="author" content="Georgios Zachos">
+  <meta name="theme-color" content="#2f5bea">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Georgios Zachos · Junior Software Engineer">
+  <meta property="og:description" content="Junior Software Engineer at Cognity Consulting, working across enterprise software, real-time graphics, NLP and distributed systems.">
+  <meta property="og:url" content="https://georgezach24.github.io/personal/">
+  <meta property="og:image" content="https://georgezach24.github.io/personal/assets/img/profile.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Apply the saved/OS theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (!theme) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-bs-theme', theme);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Georgios Zachos",
+    "alternateName": "Γεώργιος Ζάχος",
+    "jobTitle": "Junior Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Cognity Consulting" },
+    "url": "https://georgezach24.github.io/personal/",
+    "image": "https://georgezach24.github.io/personal/assets/img/profile.jpg",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of the Aegean" },
+    "knowsLanguage": ["el", "en"],
+    "sameAs": [
+      "https://www.linkedin.com/in/georgios-zachos-271b72228/",
+      "https://github.com/Georgezach24"
+    ]
+  }
+  </script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0">
+  <a class="visually-hidden-focusable skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <!-- ============ Navigation ============ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand brand" href="#top" aria-label="Georgios Zachos, home">GZ<span class="brand-dot">.</span></a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-last ms-auto ms-lg-3">
+        <button id="langToggle" class="btn btn-icon" type="button" aria-label="Switch language">
+          <span class="lang-label">ΕΛ</span>
+        </button>
+        <button id="themeToggle" class="btn btn-icon" type="button" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars theme-icon-light"></i>
+          <i class="bi bi-sun theme-icon-dark"></i>
+        </button>
+        <button class="navbar-toggler btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <header id="top" class="hero">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 order-2 order-lg-1 reveal">
+            <p class="eyebrow mb-3" data-i18n="hero.greeting">Hi, my name is</p>
+            <h1 class="display-name" data-i18n="hero.name">Georgios Zachos</h1>
+            <h2 class="hero-role" data-i18n="hero.role">Junior Software Engineer at Cognity Consulting</h2>
+            <p class="lead hero-lead" data-i18n="hero.lead">I build enterprise software at Cognity Consulting, and outside work I explore real-time graphics, natural language processing and distributed systems. I care about clean, reliable code that solves real problems.</p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#contact" class="btn btn-accent btn-lg">
+                <i class="bi bi-send me-2"></i><span data-i18n="hero.ctaContact">Get in touch</span>
+              </a>
+              <a href="#projects" class="btn btn-outline-accent btn-lg">
+                <span data-i18n="hero.ctaProjects">View my work</span><i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+
+            <ul class="social-list mt-4">
+              <li><a href="https://www.linkedin.com/in/georgios-zachos-271b72228/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="https://github.com/Georgezach24" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+              <li><a href="#contact" class="js-email-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 text-center reveal">
+            <div class="portrait">
+              <img src="assets/img/profile.jpg" alt="Portrait of Georgios Zachos" width="348" height="348" class="portrait-img">
+              <span class="portrait-badge"><span class="pulse"></span><span data-i18n="hero.badge">Now at Cognity Consulting</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About"><i class="bi bi-chevron-down"></i></a>
+    </header>
+
+    <!-- ============ About ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">01</span>
+          <h2 class="section-title" data-i18n="about.title">About me</h2>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-7 reveal">
+            <p class="fs-5" data-i18n="about.p1">I'm a Junior Software Engineer at Cognity Consulting, a digital systems integrator delivering enterprise IT projects across Southeast Europe. I also study Information &amp; Communication Systems Engineering at the University of the Aegean (since 2021). My personal and academic work spans C++ graphics programming with OpenGL, Python NLP pipelines built on transformer models, and event-driven systems with Apache Kafka.</p>
+            <p data-i18n="about.p2">Outside of code, years of robotics (from the FIRST LEGO League Challenge to research with Aegean Robotics) and customer-facing work in fast-paced environments have taught me to communicate clearly, stay organised under pressure and work well as part of a team.</p>
+            <p data-i18n="about.p3">I'm always happy to connect with people working on interesting problems, whether that's a project, a collaboration or a good conversation about technology.</p>
+          </div>
+
+          <div class="col-lg-5 reveal">
+            <div class="fact-list">
+              <div class="fact">
+                <i class="bi bi-briefcase"></i>
+                <div>
+                  <h3 data-i18n="about.factRoleTitle">Current role</h3>
+                  <p data-i18n="about.factRole">Junior Software Engineer, Cognity Consulting</p>
+                </div>
+              </div>
+              <div class="fact">
+                <i class="bi bi-mortarboard"></i>
+                <div>
+                  <h3 data-i18n="about.factEduTitle">Education</h3>
+                  <p data-i18n="about.factEdu">Information &amp; Communication Systems Engineering, University of the Aegean (2021 – present)</p>
+                </div>
+              </div>
+              <div class="fact">
+                <i class="bi bi-globe2"></i>
+                <div>
+                  <h3 data-i18n="about.factLangTitle">Languages</h3>
+                  <p data-i18n="about.factLang">Greek (native) · English (C2, Michigan Language Assessment)</p>
+                </div>
+              </div>
+              <div class="fact">
+                <i class="bi bi-airplane"></i>
+                <div>
+                  <h3 data-i18n="about.factErasmusTitle">International experience</h3>
+                  <p data-i18n="about.factErasmus">Erasmus+ exchange, delivering graphics and NLP projects</p>
+                </div>
+              </div>
+              <div class="fact">
+                <i class="bi bi-cpu"></i>
+                <div>
+                  <h3 data-i18n="about.factFocusTitle">Focus areas</h3>
+                  <p data-i18n="about.factFocus">Real-time graphics · NLP · Distributed systems · Robotics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience & Education ============ -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">02</span>
+          <h2 class="section-title" data-i18n="exp.title">Experience &amp; education</h2>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <ol class="timeline">
+              <li class="timeline-item timeline-item-current reveal">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-i18n="exp.e0.date">Present</span>
+                  <span class="tag tag-work" data-i18n="tag.current">Current</span>
+                </div>
+                <h3 class="timeline-role" data-i18n="exp.e0.role">Junior Software Engineer</h3>
+                <p class="timeline-org">Cognity Consulting</p>
+                <p data-i18n="exp.e0.desc">Software engineering at Cognity, a digital systems integrator that delivers enterprise IT projects for telecom, banking, retail and public-sector organisations across Southeast Europe.</p>
+              </li>
+              <li class="timeline-item reveal">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-i18n="exp.e1.date">Dec 2024 – Feb 2025</span>
+                  <span class="tag tag-volunteer" data-i18n="tag.volunteer">Volunteer</span>
+                </div>
+                <h3 class="timeline-role" data-i18n="exp.e1.role">Robotics Researcher</h3>
+                <p class="timeline-org">Aegean Robotics</p>
+                <p data-i18n="exp.e1.desc">Volunteer research role in robotics, working alongside a team on robotic systems.</p>
+              </li>
+              <li class="timeline-item reveal">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-i18n="exp.e2.date">Apr 2024 – Nov 2024</span>
+                  <span class="tag tag-work" data-i18n="tag.seasonal">Seasonal</span>
+                </div>
+                <h3 class="timeline-role" data-i18n="exp.e2.role">Bartender / Barista</h3>
+                <p class="timeline-org">Abraco</p>
+                <p data-i18n="exp.e2.desc">Customer service in a fast-paced environment with an emphasis on communication and collaboration. Built strong skills in handling pressure, staying organised and working as a team.</p>
+              </li>
+              <li class="timeline-item reveal">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-i18n="exp.e3.date">Feb 2018 – Jun 2019</span>
+                  <span class="tag tag-volunteer" data-i18n="tag.competition">Competition</span>
+                </div>
+                <h3 class="timeline-role" data-i18n="exp.e3.role">Robotics Engineer</h3>
+                <p class="timeline-org">FIRST LEGO League Challenge</p>
+                <p data-i18n="exp.e3.desc">Designed, built and programmed robots as part of a team competing in the international FIRST LEGO League Challenge.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card info-card reveal">
+              <div class="card-body">
+                <h3 class="info-card-title"><i class="bi bi-mortarboard me-2"></i><span data-i18n="edu.title">Education</span></h3>
+                <p class="timeline-date mb-1" data-i18n="edu.date">2021 – present</p>
+                <p class="fw-semibold mb-0" data-i18n="edu.degree">Information &amp; Communication Systems Engineering</p>
+                <p class="text-body-secondary" data-i18n="edu.school">University of the Aegean</p>
+                <p class="fw-semibold mb-0" data-i18n="edu.erasmus">Erasmus+ exchange programme</p>
+                <p class="text-body-secondary mb-0" data-i18n="edu.erasmusDesc">Technical projects in real-time graphics and NLP</p>
+              </div>
+            </div>
+
+            <div class="card info-card reveal mt-4">
+              <div class="card-body">
+                <h3 class="info-card-title"><i class="bi bi-translate me-2"></i><span data-i18n="lang.title">Languages</span></h3>
+                <div class="lang-row">
+                  <span data-i18n="lang.greek">Greek</span>
+                  <span class="text-body-secondary" data-i18n="lang.native">Native</span>
+                </div>
+                <div class="meter" role="img" aria-label="Native"><span style="width:100%"></span></div>
+                <div class="lang-row mt-3">
+                  <span data-i18n="lang.english">English</span>
+                  <span class="text-body-secondary" data-i18n="lang.c2">C2 · Michigan Language Assessment</span>
+                </div>
+                <div class="meter" role="img" aria-label="C2"><span style="width:95%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">03</span>
+          <h2 class="section-title" data-i18n="proj.title">Selected projects</h2>
+        </div>
+        <p class="section-sub reveal" data-i18n="proj.sub">Technical work across graphics, AI and distributed systems, including projects delivered during my Erasmus exchange.</p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="project-top">
+                  <i class="bi bi-badge-3d project-icon"></i>
+                  <a href="https://github.com/Georgezach24/Real-Time-Graphics-Pattern-Renderer" target="_blank" rel="noopener" class="project-link" aria-label="Real-Time Graphics Pattern Renderer on GitHub"><i class="bi bi-github"></i></a>
+                </div>
+                <span class="tag tag-accent mb-2 align-self-start">Erasmus+</span>
+                <h3 class="project-title" data-i18n="proj.p1.title">Real-Time Graphics Pattern Renderer</h3>
+                <p class="flex-grow-1" data-i18n="proj.p1.desc">A C++ and OpenGL application for real-time rendering of 3D models using GLSL shaders, with an interactive interface.</p>
+                <ul class="tech-list"><li>C++</li><li>OpenGL</li><li>GLSL</li></ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="project-top">
+                  <i class="bi bi-chat-square-text project-icon"></i>
+                  <a href="https://github.com/Georgezach24/NLP" target="_blank" rel="noopener" class="project-link" aria-label="Emotion Detection project on GitHub"><i class="bi bi-github"></i></a>
+                </div>
+                <span class="tag tag-accent mb-2 align-self-start">Erasmus+</span>
+                <h3 class="project-title" data-i18n="proj.p2.title">Emotion Detection &amp; Rhetorical Analysis in Political Texts</h3>
+                <p class="flex-grow-1" data-i18n="proj.p2.desc">A Python pipeline that applies NLP and transformer models to analyse emotion and rhetoric in political texts.</p>
+                <ul class="tech-list"><li>Python</li><li>NLP</li><li>Transformers</li></ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="card project-card h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="project-top">
+                  <i class="bi bi-diagram-3 project-icon"></i>
+                  <a href="https://github.com/Georgezach24/Order-System" target="_blank" rel="noopener" class="project-link" aria-label="Order System on GitHub"><i class="bi bi-github"></i></a>
+                </div>
+                <span class="tag tag-accent mb-2 align-self-start" data-i18n="tag.distributed">Distributed systems</span>
+                <h3 class="project-title" data-i18n="proj.p3.title">Kafka Order System</h3>
+                <p class="flex-grow-1" data-i18n="proj.p3.desc">A distributed application that demonstrates Apache Kafka's features through a complete order-processing system.</p>
+                <ul class="tech-list"><li>Python</li><li>Apache Kafka</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="more-repos reveal">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+            <h3 class="h5 mb-0" data-i18n="proj.moreTitle">More on GitHub</h3>
+            <a href="https://github.com/Georgezach24?tab=repositories" target="_blank" rel="noopener" class="link-accent small">
+              <span data-i18n="proj.viewAll">View all repositories</span> <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+          <div id="repoGrid" class="row g-3" aria-live="polite">
+            <p class="text-body-secondary mb-0" data-i18n="proj.loading">Loading repositories…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">04</span>
+          <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="skill-group">
+              <h3><i class="bi bi-code-slash"></i><span data-i18n="skills.prog">Programming languages</span></h3>
+              <ul class="chip-list"><li>C++</li><li>Java</li><li>Python</li><li>SQL</li><li>MATLAB</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="skill-group">
+              <h3><i class="bi bi-stars"></i><span data-i18n="skills.graphicsAi">Graphics &amp; AI</span></h3>
+              <ul class="chip-list"><li>OpenGL</li><li>GLSL shaders</li><li>NLP</li><li data-i18n="skills.transformers">Transformer models</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="skill-group">
+              <h3><i class="bi bi-hdd-network"></i><span data-i18n="skills.systems">Systems &amp; tools</span></h3>
+              <ul class="chip-list"><li>Apache Kafka</li><li>Git &amp; GitHub</li><li>HTML &amp; CSS</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 reveal">
+            <div class="skill-group">
+              <h3><i class="bi bi-microsoft"></i><span>Microsoft 365</span></h3>
+              <ul class="chip-list"><li>Excel</li><li>Word</li><li>PowerPoint</li><li>Outlook</li></ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 reveal">
+            <div class="skill-group">
+              <h3><i class="bi bi-people"></i><span data-i18n="skills.soft">Professional skills</span></h3>
+              <ul class="chip-list">
+                <li data-i18n="skills.s1">Communication</li>
+                <li data-i18n="skills.s2">Teamwork</li>
+                <li data-i18n="skills.s3">Working under pressure</li>
+                <li data-i18n="skills.s4">Organisation</li>
+                <li data-i18n="skills.s5">Customer service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">05</span>
+          <h2 class="section-title" data-i18n="contact.title">Let's work together</h2>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-5 reveal">
+            <p class="fs-5" data-i18n="contact.text">Have a project, a role or an idea in mind? Send me a message and I'll get back to you as soon as I can.</p>
+            <ul class="contact-list">
+              <li>
+                <i class="bi bi-envelope"></i>
+                <a href="#contact" class="js-email-link js-email-text">Email me</a>
+              </li>
+              <li>
+                <i class="bi bi-linkedin"></i>
+                <a href="https://www.linkedin.com/in/georgios-zachos-271b72228/" target="_blank" rel="noopener">linkedin.com/in/georgios-zachos</a>
+              </li>
+              <li>
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/Georgezach24" target="_blank" rel="noopener">github.com/Georgezach24</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <form id="contactForm" class="card contact-card" novalidate>
+              <div class="card-body">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="cfName" class="form-label" data-i18n="form.name">Name</label>
+                    <input type="text" class="form-control" id="cfName" name="name" autocomplete="name" required maxlength="100">
+                    <div class="invalid-feedback" data-i18n="form.nameInvalid">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="cfEmail" class="form-label" data-i18n="form.email">Email</label>
+                    <input type="email" class="form-control" id="cfEmail" name="email" autocomplete="email" required maxlength="150">
+                    <div class="invalid-feedback" data-i18n="form.emailInvalid">Please enter a valid email address.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="cfSubject" class="form-label" data-i18n="form.subject">Subject</label>
+                    <input type="text" class="form-control" id="cfSubject" name="subject" maxlength="150">
+                  </div>
+                  <div class="col-12">
+                    <label for="cfMessage" class="form-label" data-i18n="form.message">Message</label>
+                    <textarea class="form-control" id="cfMessage" name="message" rows="5" required minlength="10" maxlength="5000"></textarea>
+                    <div class="invalid-feedback" data-i18n="form.messageInvalid">Please write a message (at least 10 characters).</div>
+                  </div>
+                  <!-- Honeypot: hidden from people, bots fill it in -->
+                  <div class="hp-field" aria-hidden="true">
+                    <label for="cfGotcha">Leave this empty</label>
+                    <input type="text" id="cfGotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+                  </div>
+                  <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                    <button type="submit" class="btn btn-accent btn-lg">
+                      <span class="spinner-border spinner-border-sm me-2 d-none" aria-hidden="true"></span>
+                      <span class="btn-label" data-i18n="form.send">Send message</span>
+                    </button>
+                    <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; <span id="year"></span> <span data-i18n="hero.name">Georgios Zachos</span></p>
+      <p class="mb-0 small text-body-secondary" data-i18n="footer.built">Built with Bootstrap, HTML, CSS &amp; JavaScript.</p>
+      <ul class="social-list social-list-sm">
+        <li><a href="https://www.linkedin.com/in/georgios-zachos-271b72228/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+        <li><a href="https://github.com/Georgezach24" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

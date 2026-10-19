@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Georgios Zachos</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5bea'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Segoe UI,Arial,sans-serif' font-size='28' font-weight='700' fill='%23fff'%3EGZ%3C/text%3E%3C/svg%3E">
+  <style>
+    /* Self-contained so it renders correctly from any URL depth */
+    :root { --bg: #fbfbfd; --text: #1b2230; --muted: #5b6577; --accent: #2f5bea; --contrast: #fff; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b1020; --text: #d5dbea; --muted: #94a0bb; --accent: #7c9cff; --contrast: #0b1020; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px;
+      background: var(--bg); color: var(--text); text-align: center;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    .code { font-family: ui-monospace, Consolas, monospace; color: var(--accent); font-size: 1rem; margin: 0; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0.5rem 0; }
+    p { color: var(--muted); }
+    a.btn {
+      display: inline-block; margin-top: 1rem; padding: 0.75rem 1.4rem; border-radius: 10px;
+      background: var(--accent); color: var(--contrast); text-decoration: none; font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">404</p>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or has moved.<br>Η σελίδα που αναζητάτε δεν βρέθηκε.</p>
+    <a class="btn" id="home" href="/">Back to homepage</a>
+  </main>
+  <script>
+    // On a GitHub Pages project site (user.github.io/repo/) home is /repo/, not /.
+    (function () {
+      var host = location.hostname, first = location.pathname.split('/')[1];
+      if (/\.github\.io$/.test(host) && first && host.split('.')[0].toLowerCase() !== first.toLowerCase()) {
+        document.getElementById('home').setAttribute('href', '/' + first + '/');
+      }
+    })();
+  </script>
+</body>
+</html>

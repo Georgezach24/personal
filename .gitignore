@@ -1,0 +1,22 @@
+# Private material (CV, drafts...) lives in /private, which has its own
+# .gitignore that ignores everything inside it. See private/.gitignore.
+
+# Secrets for the optional PHP contact handler
+api/config.php
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Logs & temp
+*.log
+*.tmp
+node_modules/
