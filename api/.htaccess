@@ -1,0 +1,4 @@
+# Block direct web access to the settings files (Apache hosts).
+<FilesMatch "^config(\.example)?\.php$">
+  Require all denied
+</FilesMatch>
