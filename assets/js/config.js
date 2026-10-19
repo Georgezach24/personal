@@ -12,7 +12,7 @@ window.SITE_CONFIG = {
   maxRepos: 6,
 
   // Email is split up so simple scrapers can't harvest it from the HTML.
-  email: { user: 'georgioszachos24', domain: 'gmail.com' },
+  email: { user: 'giorgoszaxos2003', domain: 'gmail.com' },
 
   /*
    * Where the contact form sends messages:

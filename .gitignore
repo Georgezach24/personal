@@ -1,5 +1,7 @@
 # Private material (CV, drafts...) lives in /private, which has its own
 # .gitignore that ignores everything inside it. See private/.gitignore.
+# Safety net: never commit PDFs (e.g. a CV) dropped at the repo root.
+/*.pdf
 
 # Secrets for the optional PHP contact handler
 api/config.php
