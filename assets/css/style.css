@@ -249,6 +249,7 @@ a:hover { color: var(--accent-hover); }
   width: 12px; height: 12px; border-radius: 50%;
   background: var(--page-bg-alt); border: 3px solid var(--accent);
 }
+.timeline-item-current::before { background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
 .timeline-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; }
 .timeline-date { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); }
 .timeline-role { font-size: 1.2rem; margin: 0; }

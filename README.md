@@ -1,6 +1,6 @@
 # Georgios Zachos · Personal Website
 
-My personal and professional website, built with **Bootstrap 5**, **HTML**, **CSS** and **JavaScript**, plus an optional **PHP** contact form handler.
+My personal and professional website (Junior Software Engineer at Cognity Consulting), built with **Bootstrap 5**, **HTML**, **CSS** and **JavaScript**, plus an optional **PHP** contact form handler.
 
 **Live:** https://georgezach24.github.io/personal/
 
